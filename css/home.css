@@ -1,0 +1,86 @@
+
+
+/* -------------- RESET -------------- */
+
+html {
+  height: 100%;
+  box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------- ESTILOS -------------- */
+
+body {
+  font-family: 'robotoregular', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------- INTRO (BIENVENIDA)  -------------- */
+
+/* Imagen de fondo "Mundo" */
+body {
+  background-image: url("../img/bg_mundo2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;  
+}
+
+/* Contenedor de título, subtitulo y botón */ 
+.wrapper-intro {
+  width: 100%;  
+  text-align: center;
+}
+
+/* Título "Reciclando" + Subtítulo */
+.wrapper-intro h1, 
+.wrapper-intro h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Título "Reciclando" */
+.wrapper-intro h1 {
+  font-family: 'robotoblack', sans-serif;
+  background: #FFAF00;
+  background:linear-gradient(180deg, #f9b52b -5%, #c67700 100%);
+  font-size: 10vw; /*5.2em;*/
+  margin-bottom: 0px;
+  font-weight: bold;  
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 0.1em 0;
+
+}
+
+/* Subtítulo  "Aprendiendo a reciclar" */
+.wrapper-intro h2 {
+  font-family: 'robotoregular', sans-serif;
+  background-color: #3AA2D7;
+  margin-top: 0px;
+  font-size: 5vw; /*2.5em;*/
+  padding: 0.2em 0;
+}
+
+/**/
+.boton {  
+  position: absolute;
+  bottom: 25%;  
+  text-align: center;
+}
+
+
+
+

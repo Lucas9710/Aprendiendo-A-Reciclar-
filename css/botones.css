@@ -1,0 +1,101 @@
+
+/* Estilo botones */
+
+.btn {
+  text-transform: uppercase;
+  margin: 6px;
+  font-size: 4vw;
+  line-height: 1.42;
+  padding: 0.6em 2.5em;
+  border-width: 0;
+  border-radius: 1.31em;
+  cursor: pointer;
+  font-family: "robotoregular", sans-serif;
+  user-select: none;
+  vertical-align: bottom;
+  transition: box-shadow 0.15s, transform 0.15s, color 0.15s;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;   
+}
+
+.btn:hover {    
+  box-shadow: 0 2px 0 0 #555, 0 1.31em 1em 0 rgba(255, 255, 255, 0.05) inset, 0 2px 1px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 3px 1px rgba(0, 0, 0, 0.6), 0 0 10px 1px rgba(255, 255, 255, 0.15), 0 2px 1px -1px transparent inset;
+}
+
+
+/*---- Color general ("Volver al Inicio" - "Aceptar") ---*/
+
+.btn {
+  background: #0072bc;    
+  color: #fff;    
+}
+
+.btn:hover, a.btn:active {
+  background: #C00ED3; 
+  color: #fff;
+}
+
+
+/* ------- Bienvenida (Jugar) --------- */
+
+.btn.play {
+  background: #fff;    
+  color: #555;
+  font-weight: bold;
+}
+
+.btn.play:hover {
+  background: #FF9300; 
+  color: #fff;
+}
+
+/* ----- Btn dentro de Modal --*/
+
+div.mod {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn.close {
+  background: #6b6b6b;    
+  color: #fff;    
+}
+
+.btn.close:hover {
+  background: #999; 
+  color: #fff;
+}
+
+
+
+/* ------- Botones con imagenes ---------- */
+
+.btn-img { 
+  margin: 2vw 20vw;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 6px 6px 24px -3px rgba(0,0,0,0.51); 
+  text-align: center;
+  border: 4px solid #fff;
+  transition: border 0.2s, transform 0.15s, color 0.15s;
+}
+
+.btn-img:hover,
+.btn-img:active {
+  border: 4px solid #FFAF00;
+  box-shadow: 0 2px 0 0 #555, 0 1.31em 1em 0 rgba(255, 255, 255, 0.05) inset, 0 2px 1px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 3px 1px rgba(0, 0, 0, 0.6), 0 0 10px 1px rgba(255, 255, 255, 0.15), 0 2px 1px -1px transparent inset;
+}
+
+.btn-img img {
+  width: 75%;
+}
+
+.btn-img p {
+  font-family: 'robotomedium', sans-serif;  
+  text-align: center;
+  color: #525252;
+  font-size: 5vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-weight: 600;
+}

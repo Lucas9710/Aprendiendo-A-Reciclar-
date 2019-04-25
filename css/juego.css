@@ -1,0 +1,130 @@
+
+/* -------------- RESET -------------- */
+
+html {
+  height: 100%;
+  box-sizing: border-box;	
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --------- ESTILOS ----------*/ 
+
+body {
+  font-family: 'robotoregular', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------- PAGINA INTERNA -------------- */
+
+
+/* Imagen de fondo "arboles" */
+body {
+  background-image: url("../img/bg_arboles2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;	 
+}	
+
+div.main {
+  margin: 0px;
+  padding: 0px;  
+}
+
+.wrapper-buttons {  
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Contenedor "Tiempo" y "Barra de puntuación" */
+footer {
+  background-color: rgba(250,250,250, 0.6);
+  display: flex;  
+  justify-content: space-around;
+  padding: 2vw 4vw;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#time, #game-bar {
+  box-shadow: 6px 6px 24px -3px rgba(0,0,0,0.51); 
+  border-radius: 15px;
+  padding: 1vw 2vw;
+}
+
+#time {
+  background: #C95D00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+}
+
+#time span {
+  font-size: 6vw;  
+  padding-left: 2vw;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  width: 40px;
+}
+
+#game-bar {
+  background: #8B408D;
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  background-color: #fff;
+  border-radius: 7px;
+  width: 112px;
+  height: 17px;
+}
+
+.bar span {
+  background: #FFC107;
+  border-radius: 7px;
+  width: 0px;
+  height: 13px;
+  display: block;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+/* "Reciclando" */
+
+.reciclando {
+  background: #FFAF00;
+  background: linear-gradient(180deg, #f9b52b -5%, #c67700 100%);
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  -webkit-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.21);
+  box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.21);
+}
+
+.reciclando h1 {
+  font-family: 'robotoblack', sans-serif;
+  margin: 2vw 4vw;
+  font-size: 7vw;
+}
+

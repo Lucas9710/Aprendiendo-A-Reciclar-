@@ -1,0 +1,77 @@
+
+
+/* Modal */
+.modal {
+  font-family: 'robotomedium', sans-serif; 
+  display: none; /* ocultos */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10010;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20px auto;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #888;
+  width: 93%;
+  border-radius: 12px;
+}
+
+.modal-content img {
+  width: 90%;
+}
+
+.modal-content h2 {
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-content h3 {
+  color: #27a0ca;
+  margin-bottom: 1vw;
+}
+
+.modal-content .instrucciones {
+  height: 75vh;
+  overflow: scroll;
+}
+
+/* La cruz para cerrar el modal */
+.cruz {
+  color: #a5a5a5;
+  float: right;
+  font-size: 10vw;
+}
+
+.cruz:hover, .cruz:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*---*/
+
+/* Seleccionar Nivel */
+
+.niveles b {
+  color: #27a0ca;
+  line-height: 5vw;
+}
+
+/* ¿ Sabés cómo separar tus residuos? */
+
+a.pdf {
+  font-weight: bold;
+  color: #f76004;
+}
+
+a.pdf:hover {
+  color: #73980a;
+}
