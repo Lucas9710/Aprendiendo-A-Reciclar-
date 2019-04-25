@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclando</title>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">	
+    <link rel="stylesheet" type="text/css" href="css/resultado.css">
+    <link rel="stylesheet" type="text/css" href="css/botones.css">
+
+    <script src="js/resultado.js"></script>
+  </head>
+
+  <body>
+
+    <div class="main">
+
+      <div class="reciclando">
+        <h1>Reciclando</h1>
+      </div>
+
+      <section class="wrapper-feedback">
+
+        <p>Resultado</p>
+        <div id="feedback_bien">
+          <img src="img/feedback_bien.png" alt="" height="150px">
+          <h1 class="good">¡Muy bien!</h1>
+          <h2>Sos un excelente reciclador</h2>
+        </div>
+
+        <div id="feedback_mal" style="display:none">
+          <img src="img/feedback_mal.png" alt="" height="150px">
+          <h1 class="bad">Ooh no!</h1>
+          <h2>Tenés que seguir practicando</h2>
+        </div>
+
+        <div class="puntos">
+          <img src="img/icon2.png" alt="">
+          <p id="puntos">250 Puntos</p>
+        </div>
+
+        <div class="boton">
+          <button class="btn back" onclick="volver()">Volver al inicio</button>
+        </div>
+       
+
+      </section>
+
+    </div>
+
+  </body>
+</html>

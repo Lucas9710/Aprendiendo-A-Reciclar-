@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclando Juego</title>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">	
+    <link rel="stylesheet" type="text/css" href="css/juego.css">	
+    <link rel="stylesheet" type="text/css" href="css/botones.css">	
+
+    <script src="js/datos.js"></script>
+    <script src="js/juego.js"></script>
+  </head>
+  <body>
+
+    <div class="main">
+
+      <div class="reciclando">
+        <h1>Reciclando</h1>
+      </div>
+
+      <!-- IMAGENES -->
+      <section class="wrapper-buttons">
+
+        <button id="boton0" class="btn-img">
+          <img id="img0" src="img/norecic/termometro.jpg">
+          <p id="nombreImg0">Termómetro</p>
+        </button>
+
+        <button id="boton1" class="btn-img">
+          <img id="img1" src="img/recic/caja-carton.jpg">
+          <p id="nombreImg1">Caja de cartón</p>
+        </button>
+
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div id="time"><img src="img/time_icon.png" alt="">
+          <span id="timeCount">10</span>
+        </div>
+
+        <div id="game-bar"><img src="img/game_bar_icon.png" alt="">
+          <div class="bar">
+            <span id="progressBar"></span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

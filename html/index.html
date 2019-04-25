@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Reciclando</title>	
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">	
+    <link rel="stylesheet" type="text/css" href="css/home.css">	
+    <link rel="stylesheet" type="text/css" href="css/modal.css">	
+    <link rel="stylesheet" type="text/css" href="css/checkbox.css">	
+    <link rel="stylesheet" type="text/css" href="css/botones.css">	
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+
+    <script src="js/home.js"></script>
+  </head>
+
+  <body>
+
+    <!-- MENU https://github.com/balzss/luxbar -->
+    <header id="luxbar" class="luxbar-fixed">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-indigo">
+        <ul class="luxbar-navigation">
+          <li class="luxbar-header">
+            <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                   id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+          </li>
+          <li id="item1" class="luxbar-item"><a href="#">Instrucciones</a></li>
+          <li id="item2" class="luxbar-item"><a href="#">Seleccionar Nivel</a></li>
+          <li id="item3" class="luxbar-item"><a href="#">¿Sabés cómo separar tus residuos?</a></li>
+          <li id="item4" class="luxbar-item"><a href="#">Acerca de</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- end of menu -->
+
+
+    <!-- SECCIONES DEL MENÚ -->
+
+    <!-- Instrucciones -->
+    <div id="modal1" class="modal">			 
+      <div class="modal-content">
+        <span class="cruz cerrar">&times;</span>
+        <h2>Instrucciones</h2>
+        <div class="instrucciones">
+          <h3>¿Qué es Reciclando?</h3>
+          <p>Reciclando es una aplicación que te permite aprender a reciclar. Reciclando te permitirá aprender a distinguir los objetos reciclables de forma fácil y entretenida.</p>
+
+          <h3>¿Cuál es el objetivo del juego?</h3>
+          <p>El objetivo del juego es reconocer los objetos que se pueden reciclar. Tené en cuenta que algunos objetos pueden estar hechos con materiales que son reciclables pero en ciertas circunstancias pueden llegar a no ser reciclables. </p>
+
+          <h3>¿Cómo jugar?</h3>
+          <p>Al iniciar el juego se te mostrarán dos imágenes, una con un objeto reciclable y otro no reciclable. Tu misión es seleccionar el objeto que es reciclable. Tendrás un tiempo máximo para responder según el nivel elegido: Fácil, Medio o Fifícil.</p>
+          <img src="img/instrucciones_01.jpg">
+
+          <h3>¿Cómo funcionan los puntos?</h3>
+          <p>Obtenés 10 puntos cada vez que acertás cual es el objeto reciclable.</p>
+
+          <h3>¿Qué basura se puede reciclar?</h3>
+          <p>¡Jugá y descubrilo!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de Instrucciones -->
+
+
+    <!-- Seleccionar Nivel -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h2>Seleccionar Nivel</h2>
+
+        <div class="container-levels">
+          <ul>
+            <li>
+              <input type="radio" name="nivel" value="facil" id="opcion-f" checked>
+              <label for="opcion-f"><b>Fácil</b></label>
+              <div class="check"></div>
+            </li>
+
+            <li>
+              <input type="radio" name="nivel" value="medio" id="opcion-m">
+              <label for="opcion-m"><b>Medio</b></label>
+              <div class="check"><div class="inside"></div></div>
+            </li>
+
+            <li>
+              <input type="radio" name="nivel" value="dificil" id="opcion-d">
+              <label for="opcion-d"><b>Difícil</b></label>
+              <div class="check"><div class="inside"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mod">
+          <button class="btn cerrar" onclick="cerrarNivel">Aceptar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de Seleccionar Nivel -->
+
+
+    <!-- "Separar residuos" -->
+    <div id="modal3" class="modal">			  
+      <div class="modal-content">
+        <span class="cruz cerrar">&times;</span>
+        <h2>¿Sabés cómo separar tus residuos?</h2>
+        <img src="img/separar_residuos.png" alt="Como separar residuos">
+      </div>
+    </div>
+    <!-- Fin de Separar Residuos -->
+
+
+    <!-- Acerca de -->
+    <div id="modal4" class="modal">			  
+      <div class="modal-content">
+        <span class="cruz cerrar">&times;</span>
+        <h2>Acerca de</h2>
+        <p>
+          <b>Reciclando</b> Versión 1.0
+        </p>
+        <p>
+          Desarollado por <em>Lucas Nuñez</em>
+        </p>
+      </div>
+    </div>
+    <!-- Fin de Acerca de -->
+
+    <!-- FIN DE SECCIONES DEL MENÚ -->
+
+
+    <!-- Contenido "Bienvenida" -->
+    <section class="wrapper-intro">			
+      <header>
+        <h1>Reciclando</h1>
+        <h2>Aprendiendo a reciclar</h2>
+      </header>
+
+    </section>
+
+    <div class="boton">
+      <button class="btn play" onclick="jugar()">Jugar</button>
+    </div>
+    <!-- End of "Bienvenida" -->
+    <script src="js/home.js"></script>
+  </body>
+</html>
